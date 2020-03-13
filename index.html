@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Materialize CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<div class="navbar-fixed">
+	    <nav class="light-blue lighten-1" role="navigation">
+	        <div class="container">
+	            <div class="nav-wrapper">
+	                <ul class="left">
+	                    <li><a href="#">Accueil</a></li>
+	                    <li><a href="#">Définitions</a></li>
+	                    <li><a href="#">Transcription automatique</a></li>
+	                    <li><a href="#">Etat de l'art</a></li>
+	                </ul>
+	            </div>
+	        </div>
+	    </nav>
+	</div>
+
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h1 class="header center orange-text">Transcription Automatique de Musique</h1>
+            <div class="row center">
+                <h5 class="header col s12 light">Veille technologique - Vincent DUONG</h5>
+            </div>
+            <div class="row center">
+                <a href="#introduction" id="download-button" class="btn-large waves-effect waves-light orange">Commencer</a>
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+    	<div class="parallax"><img src="images/piano-sheet.jpg"></div>
+    </div>
+
+    <div class="container section">
+        <div class="row">
+            <div class="col s12">
+                
+                <h1 id="introduction">Introduction</h1>
+
+	                <p>Pour contextualiser, ce travail s’inscrit dans le cadre du cours intitulé « Nouvelles technologies de l’information et de la communication » de la formation d’ingénieur à l’Ecole Centrale de Lyon. Cet enseignement a pour objectif d’effectuer une veille technologique sur un sujet totalement libre. Ce site est le résultat de cette veille. Passionné de musique, j’ai opté pour le sujet de la transcription automatique de musique. C’est un sujet très spécifique, pas nécessairement très prolifique comparé à d’autres sujets à l’heure actuelle mais qui m’intéresse énormément, et cette veille est l’occasion de s’y intéresser de très près.</p>
+
+	                <p>Pour plus d'informations à propos de la veille en elle-même, voir section A propos</p>
+
+	                <p>La transcription de musique automatique a un potentiel d'applications vastes, que ce soit dans le domaine de l'éduction, de la création (transcription d'improvisation à la volée), de la production (visualisation de la musique), ou de la musicologie (étude de musiques non écrites), etc... Pour en savoir plus, rendez-vous en section cf. truc</p>
+            </div>
+        </div>
+    </div>
+
+	<div class="parallax-container">
+		<div class="parallax"><img src="images/saxophone-sheet.jpg"></div>
+	</div>
+
+    <div class="container section">
+        <div class="row">
+            <div class="col s12">
+                <h1 id="definitions">Définitions</h1>
+
+                	<p>Avant de rentrer dans le vif du sujet, définissons quelques notions clés.</p>
+                
+                <h2>Son musical</h2>
+                
+	                <p>Physiquement, le son est une vibration mécanique d’un fluide, qui se propage de manière longitudinale. La source, par exemple un haut-parleur, émet une pression dans l’air à travers laquelle le son se propage. 
+	                <p>La fréquence de cette onde est la première caractéristique du son. Plus la fréquence est élevée, plus le son est aigu. La plage de fréquence moyenne audible pour l’Homme s’étend de 20 Hz à 20 kHz.</p>
+	                <p>L’amplitude de l’onde caractérise l’ampleur de l’oscillation d’une onde par rapport à sa valeur moyenne. L’intensité d’un son dépend directement de l’amplitude.</p>
+					<p>Un son musical est dernièrement caractérisé par son timbre, qui constitue la qualité, la couleur, la personnalité du son.</p>
+				
+				<h2>Musique</h2>
+				
+				<p>La musique est l’art de combiner des sons. Les quatre éléments principaux de la musique sont la hauteur (la fréquence du son), le rythme (l’agencement des sons dans le temps), les nuances (l’intensité des sons), et le timbre.</p>
+
+				<h2>Transcription</h2>
+
+					<p>La transcription musicale désigne le fait de noter de la musique sur un support quelconque permettant de conserver une œuvre musicale.</p>
+
+					<p>Par exemple, la légende veut que Mozart ait parfaitement retranscrit le Miserere de Gregorio Allegri à l'âge de 14 ans alors qu'il n'avait que 14 ans. Ce morceau était uniquement joué à la chapelle Sixitine et dont la partition, non publiée, était tenue secrète.</p>
+
+					<h3>Partition</h3>
+
+						<p>Une partition est ainsi le support le plus répandu aujourd’hui. On y trouve les quatre éléments cités plus haut. Une note de musique permet ainsi de représenter la hauteur et la durée d’un son. </p>
+
+						<p>L’agencement des notes dans le temps constitue le rythme. Les nuances y sont présentes ainsi que les timbres, dans l’indication de l’instrument.</p>
+
+					<h3>MIDI</h3>
+
+					<p>Le Musical Instrument Digital Interface, créé en 1981, est un protocole de communication et un format de fichier dédiés à la musique à travers des messages MIDI qui transmettent des commandes et non des signaux audios.</p>
+
+					<p>Les messages <i>note-on</i> et <i>note-off</i> permettent ainsi de déclencher ou arrêter une note. Le paramètre de <i>velocité</i> désigne l'intensité de la note jouée.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+    	<div class="parallax"><img src="images/mix.jpg"></div>
+    </div>
+
+    <div class="container section">
+        <div class="row">
+            <div class="col s12">
+
+                <h1>Transcription automatique</h1>
+
+                	<p>Pour un humain, la transcription musicale est un exercice complexe qui requiert une bonne perception sonore et une solide connaissance musicale théorique. La transcription musicale automatique désigne l'exercice de transcription par des algorithmes, mêlant analyse du signal et intelligence artificielle. Bien que l'exercice de transcription soit un excellent entraînement musicale pour un musicien, l'automatisation de cette tâche permet d'enrichir la bibliothèque musicale et est une aide précieuse à tous ceux qui souhaitent apprendre la musique.</p>
+
+                	<p>La transcription automatique musicale est étroitement liée à d'autres problèmes d'analyse du signal tel que celui de la séparation de sources (pour simplifier un problème polyphonique), ou encore la comparaison de musiques (le fait de comparer deux musiques peut se faire en comparant leur transcription par exemple).</p>
+                
+				<h2>Difficultés principales</h2>
+
+					<p>Pour de nombreux algorithmes de reconnaissance musicale, le manque de données bien annotées est le frein majeur. En effet, il faut pouvoir identifier des pairs audio / trancription, et les partitions musicales ne possèdent pas toutes les informations précises : ils ne sont pas nécessairement syncrhonisés avec l'enregistrement, le musicien en jouant a pu prendre des libertés par rapport à ce qui est écrit, etc... D'autre part, produire de tels datasets requiert une bonne connaissance musicale et est chronophage. Les algorithmes basés sur des techniques d'apprentissage supervisées (cf. AnthemScore), qui se sont bien développées ces dernières années en image, ont encore du mal a se développé de la même manière en transcription automatique de musique à cause de ce manque de données.</p>
+
+					<p>Un enregistrement musical contient souvent plusieurs instruments, et chacun de ces instruments est suscpetible de jouer plusieurs notes à la fois (polyphonie). Chaque note peut avoir une hauteur, un timbre, une intensité différente, etc... Extraire de ce mélange une information musicale pertinente devient alors plus qu'un simple problème d'analyse du signal classique. De plus, </p>
+
+				<h2>Sous-problèmes</h2>
+
+					<p>Au regard des difficultés mentionnées ci-dessus, la transcription automatique de musique est divisée en plusieurs sous-problèmes. Les algorithmes peuvent ainsi être spécialisé dans une tâche précise sans nécessairement prétendre à résoudre le problème de la transcription automatique dans son ensemble.</p>
+
+	                <h3>Pitch Detection</h3>
+					
+						<p></p>
+
+					<h3>Onset Detection</h3>
+
+					<h3>Source Separation</h3>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+    	<div class="parallax"><img src="images/violin.jpg"></div>
+    </div>
+
+    <div class="container section">
+        <div class="row">
+            <div class="col s12">
+
+                <h1>Etat de l'art</h1>
+
+					<h2>Détection polyphonique de hauteurs</h2>
+
+	                	<h3>Google Magenta : Onsets & Frames</h3>
+						
+		                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim culpa repellat ipsam quis. Explicabo ad, a voluptatem! Distinctio omnis aliquid, fugiat eaque officia ratione, accusantium perspiciatis, molestiae vitae delectus ea.</p>
+
+						<h3>AnthemScore</h3>
+
+					<h2>Détection de la fréquence fondamentale</h2>
+    
+    					<h3>pYin</h3>
+
+							<p></p>
+
+						<h3>CREPE</h3>
+
+							<p></p>
+
+					<h2>Séparation de sources</h2>
+
+						<h3>Spleeter</h3>
+
+							<p></p>
+
+						<h3>Open Unmix</h3>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+    	<div class="parallax"><img src="images/headphones.jpg"></div>
+    </div>
+
+    <div class="container section">
+        <div class="row">
+            <div class="col s12">
+                <h1>A propos de la veille</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim culpa repellat ipsam quis. Explicabo ad, a voluptatem! Distinctio omnis aliquid, fugiat eaque officia ratione, accusantium perspiciatis, molestiae vitae delectus ea.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer orange">
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Materialize Components -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+    M.AutoInit();
+    </script>
+</body>
+
+</html>
+

@@ -18,10 +18,10 @@
 	        <div class="container">
 	            <div class="nav-wrapper">
 	                <ul class="left">
-	                    <li><a href="#">Accueil</a></li>
-	                    <li><a href="#">Définitions</a></li>
-	                    <li><a href="#">Transcription automatique</a></li>
-	                    <li><a href="#">Etat de l'art</a></li>
+	                    <li><a href="#introduction">Accueil</a></li>
+	                    <li><a href="#definitions">Définitions</a></li>
+	                    <li><a href="#transcription">Transcription automatique</a></li>
+	                    <li><a href="#etat-art">Etat de l'art</a></li>
 	                </ul>
 	            </div>
 	        </div>
@@ -54,9 +54,9 @@
 
 	                <p>Pour contextualiser, ce travail s’inscrit dans le cadre du cours intitulé « Nouvelles technologies de l’information et de la communication » de la formation d’ingénieur à l’Ecole Centrale de Lyon. Cet enseignement a pour objectif d’effectuer une veille technologique sur un sujet totalement libre. Ce site est le résultat de cette veille. Passionné de musique, j’ai opté pour le sujet de la transcription automatique de musique. C’est un sujet très spécifique, pas nécessairement très prolifique comparé à d’autres sujets à l’heure actuelle mais qui m’intéresse énormément, et cette veille est l’occasion de s’y intéresser de très près.</p>
 
-	                <p>Pour plus d'informations à propos de la veille en elle-même, voir section A propos</p>
-
-	                <p>La transcription de musique automatique a un potentiel d'applications vastes, que ce soit dans le domaine de l'éduction, de la création (transcription d'improvisation à la volée), de la production (visualisation de la musique), ou de la musicologie (étude de musiques non écrites), etc... Pour en savoir plus, rendez-vous en section cf. truc</p>
+	                <!-- <p>Pour plus d'informations à propos de la veille en elle-même, voir section A propos</p>
+                    
+                    <p>La transcription de musique automatique a un potentiel d'applications vastes, que ce soit dans le domaine de l'éduction, de la création (transcription d'improvisation à la volée), de la production (visualisation de la musique), ou de la musicologie (étude de musiques non écrites), etc... Pour en savoir plus, rendez-vous en section cf. truc</p> -->
             </div>
         </div>
     </div>
@@ -95,11 +95,21 @@
 
 						<p>L’agencement des notes dans le temps constitue le rythme. Les nuances y sont présentes ainsi que les timbres, dans l’indication de l’instrument.</p>
 
+                    <h3>Music XML</h3>
+
+                        <p>MusicXML est un format de fichier ouvert basé sur XML, conçu pour la transmission de partitions musicales. Le format est facile à comprendre pour un humain, comme tout fichier basé sur XML.</p>
+
 					<h3>MIDI</h3>
 
-					<p>Le Musical Instrument Digital Interface, créé en 1981, est un protocole de communication et un format de fichier dédiés à la musique à travers des messages MIDI qui transmettent des commandes et non des signaux audios.</p>
+    					<p>Le Musical Instrument Digital Interface, créé en 1981, est un protocole de communication et un format de fichier dédiés à la musique à travers des messages MIDI qui transmettent des commandes et non des signaux audios.</p>
 
-					<p>Les messages <i>note-on</i> et <i>note-off</i> permettent ainsi de déclencher ou arrêter une note. Le paramètre de <i>velocité</i> désigne l'intensité de la note jouée.</p>
+    					<p>Les messages <i>note-on</i> et <i>note-off</i> permettent ainsi de déclencher ou arrêter une note. Le paramètre de <i>velocité</i> désigne l'intensité de la note jouée.</p>
+
+                    <div class="row">
+                        <div class="col s12 m10 offset-m1 ">
+                            <img class="responsive-img" src="images/midi-sheet.png">                    
+                        </div>
+                    </div>
 
             </div>
         </div>
@@ -113,7 +123,7 @@
         <div class="row">
             <div class="col s12">
 
-                <h1>Transcription automatique</h1>
+                <h1 id="transcription">Transcription automatique</h1>
 
                 	<p>Pour un humain, la transcription musicale est un exercice complexe qui requiert une bonne perception sonore et une solide connaissance musicale théorique. La transcription musicale automatique désigne l'exercice de transcription par des algorithmes, mêlant analyse du signal et intelligence artificielle. Bien que l'exercice de transcription soit un excellent entraînement musicale pour un musicien, l'automatisation de cette tâche permet d'enrichir la bibliothèque musicale et est une aide précieuse à tous ceux qui souhaitent apprendre la musique.</p>
 
@@ -123,19 +133,7 @@
 
 					<p>Pour de nombreux algorithmes de reconnaissance musicale, le manque de données bien annotées est le frein majeur. En effet, il faut pouvoir identifier des pairs audio / trancription, et les partitions musicales ne possèdent pas toutes les informations précises : ils ne sont pas nécessairement syncrhonisés avec l'enregistrement, le musicien en jouant a pu prendre des libertés par rapport à ce qui est écrit, etc... D'autre part, produire de tels datasets requiert une bonne connaissance musicale et est chronophage. Les algorithmes basés sur des techniques d'apprentissage supervisées (cf. AnthemScore), qui se sont bien développées ces dernières années en image, ont encore du mal a se développé de la même manière en transcription automatique de musique à cause de ce manque de données.</p>
 
-					<p>Un enregistrement musical contient souvent plusieurs instruments, et chacun de ces instruments est suscpetible de jouer plusieurs notes à la fois (polyphonie). Chaque note peut avoir une hauteur, un timbre, une intensité différente, etc... Extraire de ce mélange une information musicale pertinente devient alors plus qu'un simple problème d'analyse du signal classique. De plus, </p>
-
-				<h2>Sous-problèmes</h2>
-
-					<p>Au regard des difficultés mentionnées ci-dessus, la transcription automatique de musique est divisée en plusieurs sous-problèmes. Les algorithmes peuvent ainsi être spécialisé dans une tâche précise sans nécessairement prétendre à résoudre le problème de la transcription automatique dans son ensemble.</p>
-
-	                <h3>Pitch Detection</h3>
-					
-						<p></p>
-
-					<h3>Onset Detection</h3>
-
-					<h3>Source Separation</h3>
+					<p>Un enregistrement musical contient souvent plusieurs instruments, et chacun de ces instruments est suscpetible de jouer plusieurs notes à la fois (polyphonie). Chaque note peut avoir une hauteur, un timbre, une intensité différente, etc... Extraire de ce mélange une information musicale pertinente devient alors plus qu'un simple problème d'analyse du signal classique.</p>
 
             </div>
         </div>
@@ -149,33 +147,73 @@
         <div class="row">
             <div class="col s12">
 
-                <h1>Etat de l'art</h1>
+                <h1 id="etat-art">Etat de l'art</h1>
 
 					<h2>Détection polyphonique de hauteurs</h2>
 
-	                	<h3>Google Magenta : Onsets & Frames</h3>
+                        <h3>Lunaverus : AnthemScore</h3>
+
+                            <p><a href="https://www.lunaverus.com/">AnthemScore</a> est un logiciel permettant la transcription automatique au sens large : les formats audios les plus répandus sont pris en charge (.mp3, .wav), et l'utilisateur a le choix entre plusieurs formats de sortie (.pdf, .mid, .xml).</p>
+
+                            <p>Le logiciel utilise des réseaux de neurones convolutionnels (<i>Convolutional Neural Networs</i>, ou <i>CNN</i>), très utilisés dans le domaine de la reconnaissance d'images. L'audio est transformé en une succession de spectrogrammes et le réseau est entraîné sur ces images. La difficulté principale en musique, ce sont les harmoniques : l'objet <i>note</i> qui est à détecter sur un spectrogramme n'est pas localisé dans une région précise de l'image, contrairement à un chien dans une photo d'un jardin par exemple. Une note est composée de la fréquence fondamentale et d'harmoniques, qui peuvent interférées quand plusieurs notes sont jouées simultanément.</p>
+
+                            <div class="row">
+                                <div class="col s12 m8 offset-m2">
+                                    <img class="responsive-img" src="images/anthemscore-architecture.png">
+                                </div>
+                            </div>
+
+                            <p>Comme il n'est pas possible d'utiliser le réseau de neurones sur un spectrogramme entier (la taille de chaque image varierait), AnthemScore détecte les moments de départ de notes (<i>onset frames</i>) en se basant sur l'intensité des fréquences, et découpe des images rectangulaires dans le spectrogramme centré autour de ces moments. Ces images sont celles utilisées pour le réseau pour détecter les notes jouées. Cependant, aucune notion de durée des notes n'est prise en compte par AnthemScore, seul le moment où la note est jouée est compté.</p>
+
+                            <div class="row">
+                                <div class="col s12 m8 offset-m2">
+                                    <img class="responsive-img" src="images/anthemscore-onsets.jpg">
+                                </div>
+                            </div>
+
+                            <p>Le dataset utilisé n'est pas précisé, mais le réseau a été entraîné sur 3000 fichiers MIDI, générant plus de 2,5 millions d'images d'entraînement, avec une moyenne de 3 notes par image.</p>                    
+
+                        <h3>Google Magenta : Onsets & Frames</h3>
 						
-		                	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim culpa repellat ipsam quis. Explicabo ad, a voluptatem! Distinctio omnis aliquid, fugiat eaque officia ratione, accusantium perspiciatis, molestiae vitae delectus ea.</p>
+		                	<p><a href="https://magenta.tensorflow.org/">Google Magenta</a> est un projet open source centré autour du Machine Learning pour la musique. Le modèle <a href="https://magenta.tensorflow.org/onsets-frames">Onsets and Frames</a>, publié en février 2018 (<a href="https://arxiv.org/abs/1710.11153">papier</a>), a pour objectif la transcription automatique polyphonique d'audios de piano. Restreindre le problème au piano seul permet d'obtenir de bons résultats. Le format de sortie est le format .mid.</p>
 
-						<h3>AnthemScore</h3>
+                            <p>En effet, le timbre est une caractéristique propre à chaque instrument : les harmoniques jouées par une guitare et un piano ne sont pas les mêmes, et c'est cela qui va donner la couleur de la note jouée par tel ou tel instrument. On peut facilement observer cela sur les spectres suivants : </p>
+                            
+                            <div class="row">
+                                <div class="col s12 m8 offset-m2">
+                                    <img class="responsive-img" src="images/spectrum-comparison.png">
+                                </div>
+                            </div>
 
-					<h2>Détection de la fréquence fondamentale</h2>
+                            <p>Le modèle de Google se base sur des réseaux de neurones convolutionnels (CNN) et des réseaux de neurones récurrents (<i>Long short-term memory</i>, ou <i>LSTM</i>). Comme pour AnthemScore, la détection de note est précédée d'une détection de <i>frames</i>, mais cette première étape est aussi effectuée par des réseaux de neurones.</p>
+
+                            <p>La détection d'onsets est elle-même divisée en deux sous-tâches, effectuée par deux réseaux différents. La première est celle de détecter les <i>onset frames</i>, ce que faisait AnthemScore en étudiant les fortes intensités dans les fréquences. La deuxième consiste à détecter toutes les <i>frames</i> dans lesquelles une note est jouée, afin d'avoir l'information de la durée de la note en recombinant toutes ces informations.</p>
+
+                            <p>Les hauteurs des notes sont détectée ensuite, une fois que ces deux premiers réseaux sont sûrs d'avoir détecté la présence d'une ou de plusieurs notes dans les <i>frames</i> en question.</p>
+                            
+                            <div class="row">
+                                <div class="col s8 offset-s2 m4 offset-m4">
+                                    <img class="responsive-img" src="images/google-architecture.png">
+                                </div>
+                            </div>
+                            
+                            <p>Un <a href="https://magenta.tensorflow.org/maestro-wave2midi2wave"> dataset</a> composé des enregistrements audios de piano ainsi que de leur transcription au format MIDI a été créé par Google, en utilisant les enregistrements effectués durant les <a href="http://piano-e-competition.com/">International Piano e-Competition</a>, un concours de piano dans lequel les candidats jouent sur un piano Yamaha Disklaviers qui permet de capturer les mouvements des pianistes sur le piano.</p>
+
+<!--                     <h2>Détection de la fréquence fondamentale</h2>
     
-    					<h3>pYin</h3>
+                        <h3>pYin</h3>
 
-							<p></p>
+        <p></p>
 
-						<h3>CREPE</h3>
+    <h3>CREPE</h3>
 
-							<p></p>
+        <p></p>
 
-					<h2>Séparation de sources</h2>
+<h2>Séparation de sources</h2>
 
-						<h3>Spleeter</h3>
+    <h3>Spleeter</h3>
 
-							<p></p>
-
-						<h3>Open Unmix</h3>
+        <p></p> -->
 
             </div>
         </div>
@@ -188,8 +226,13 @@
     <div class="container section">
         <div class="row">
             <div class="col s12">
+                
                 <h1>A propos de la veille</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim culpa repellat ipsam quis. Explicabo ad, a voluptatem! Distinctio omnis aliquid, fugiat eaque officia ratione, accusantium perspiciatis, molestiae vitae delectus ea.</p>
+                
+                <p>J'ai d'abord commencé par une importante phase de recherche, pour mieux comprendre le sujet. Ma veille s'est principalement effectuée à travers Feedbro et Google Alert, en créant notamment des flux RSS sur les projets de recherche qui sont disponibles sur GitHub.</p>
+
+                <p>L'actualité peu foisonnante sur ce sujet s'explique aussi par le fait que l'<i>International Society for Music Information Retrieval</i>, la communauté de chercheurs centrés autour de la musique et de l'informatique, a un congrès annuel qui se déroule aux alentours de octobre-novembre, et que les annonces principales sont gardées pour cet événement.</p>
+            
             </div>
         </div>
     </div>
